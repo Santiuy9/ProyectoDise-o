@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Indie Flower", cursive;
+    font-weight: 800;
+    font-size: 30px;
+    color: salmon;
+}
+
+body {
+    background-color: #FFF5E1;
+}
+
+i {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: bisque;
+    z-index: 3;
+}
+
+.buttonMenu {
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+.buttonCloseMenu {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.backgroundOpacity {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+.backgroundOpacityOpen {
+    display: block;
+    opacity: 1;
+    z-index: 3;
+}
+
+.listMenu {
+    position: fixed;
+    top: 0;
+    left: -45vw;
+    width: 45vw;
+    height: 100vh;
+    padding-top: 75px;
+    background-color: #F7E7CE;
+    transition: transform 0.4s ease;
+    transform: translateX(0); 
+    z-index: 3;
+}
+
+.listMenuOpen {
+    transform: translateX(45vw); 
+}
+
+.listMenu li {
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -5px;
+    margin: 0 auto;
+    width: 55px;
+    height: 60px;
+}
+
+.logo p {
+    color: black;
+    width: 115px;
+    font-size: 16px;
+}
+
+.upSpace {
+    margin-top: 75px;
+}
+
+.downSpace {
+    margin-bottom: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
+    background-color: bisque;
+    z-index: 2;
+}
+
+button:hover {
+    background-color: #555;
+    border-radius: 5px;
+
+}
