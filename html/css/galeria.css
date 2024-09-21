@@ -1,28 +1,64 @@
-.galeria-section {
-    display: flex;
-    flex-direction: column;
+h1 {
+    text-align: center;
 }
 
-.tarjetaIzquierda{
-    display: flex;
-    align-items: center;
-    background-color: sandybrown;
-    width: 95vw;
-    height: 25vh;
-    margin-bottom: 20px;
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-.tarjetaDerecha {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    background-color: sandybrown;
-    width: 95vw;
-    height: 25vh;
-    margin-bottom: 20px;
+.imagen-contenedor {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
-
-.image {
-    width: 50vw;
-    height: 90%;
+.imagen-contenedor:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.imagen-contenedor:hover img {
+    transform: scale(1.05);
+}
+.descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    padding: 5px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+.imagen-contenedor:hover .descripcion {
+    opacity: 1;
+}
+.grande {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.mediana {
+    grid-column: span 2;
+}
+.alta {
+    grid-row: span 2;
+}
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grande, .mediana {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }

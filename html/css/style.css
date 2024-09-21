@@ -18,6 +18,18 @@ i {
     cursor: pointer;
 }
 
+.name35px {
+    color: #333;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.name40px {
+    color: #333;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -105,11 +117,11 @@ header {
 }
 
 .upSpace {
-    margin-top: 75px;
+    margin-top: 90px;
 }
 
 .downSpace {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 footer {
