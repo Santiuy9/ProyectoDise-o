@@ -17,13 +17,21 @@
         <div id="backgroundOpacity" class="backgroundOpacity"></div>
         <div id="listMenu" class="listMenu">
             <button id="buttonCloseMenu" class="buttonCloseMenu"><i class="fa-solid fa-xmark"></i></button>
-            <ul>
-                <li><a href="../index.html"><p>Inicio</p></a></li>
-                <li><a href=""><p>Servicios</p></a></li>
-                <li><a href="galeria.html"><p>Galeria</p></a></li>
-                <li><a href=""><p>Sobre Nosotros</p></a></li>
-                <li><a href=""><p>Contacto</p></a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="../index.html"><p>Inicio</p></a></li>
+                    <li><a href=""><p>Servicios</p></a></li>
+                    <li><a href="galeria.html"><p>Galeria</p></a></li>
+                    <li><a href=""><p>Sobre Nosotros</p></a></li>
+                    <li><a href="contacto.html"><p>Contacto</p></a></li>
+                </ul>
+
+            </nav>
+            <div class="popup-backdrop" id="popup-backdrop"></div>
+            <div class="popup" id="popup">
+                <p>Este enlace o sitio en la página está en desarrollo.</p>
+                <button onclick="closePopup()">Cerrar</button>
+            </div>
         </div>
         <div class="logo">
             <img src="../img/logo.png" alt="" class="logo">
@@ -33,56 +41,62 @@
     <div class="upSpace"></div>
 
     <main>
-        <section id="contacto" class="contacto-section">
-            <h2>Contacto</h2>
-            <form>
-                <div class="form-group">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form action="#" method="post">
+                <div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
-                <div class="form-group">
+                <div>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <div class="form-group">
+                <div>
                     <label for="telefono">Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono" required>
                 </div>
-                <div class="form-group">
-                    <label for="comentario">Comentario:</label>
-                    <textarea id="comentario" name="comentario" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="servicio">Selecciona un servicio:</label>
-                    <select id="servicio" name="servicio" required>
-                        <option value="diseño">Diseño de moda</option>
-                        <option value="consultoria">Consultoría</option>
-                        <option value="personalizado">Personalizado</option>
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Seleccione un asunto</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="soporte">Soporte técnico</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="otro">Otro</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>¿Cómo nos encontraste?</label>
-                    <div>
-                        <label for="internet">Internet</label>
-                        <input type="radio" id="internet" name="referencia" value="internet" required>
-                    </div>
-                    <div>
-                        <label for="amigo">Recomendación de un amigo</label>
-                        <input type="radio" id="amigo" name="referencia" value="amigo">
+                <div>
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" required></textarea>
+                </div>
+                <div>
+                    <label>Preferencia de contacto:</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="preferencia" value="email" required> Email
+                        </label>
+                        <label>
+                            <input type="radio" name="preferencia" value="telefono"> Teléfono
+                        </label>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="suscripcion">Deseo recibir novedades por mail</label>
-                    <input type="checkbox" id="suscripcion" name="suscripcion">
+                <div>
+                    <label>
+                        <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
+                    </label>
                 </div>
-                <div class="form-group">
+                <div class="buttons">
                     <button type="submit">Enviar</button>
                     <button type="reset">Restablecer</button>
                 </div>
             </form>
-        </section>
+        </div>
         
     </main>
+
+    <div class="downSpace"></div>
+
 
     <footer>
 

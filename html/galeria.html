@@ -17,13 +17,21 @@
         <div id="backgroundOpacity" class="backgroundOpacity"></div>
         <div id="listMenu" class="listMenu">
             <button id="buttonCloseMenu" class="buttonCloseMenu"><i class="fa-solid fa-xmark"></i></button>
-            <ul>
-                <li><a href="../index.html"><p>Inicio</p></a></li>
-                <li><a href=""><p>Servicios</p></a></li>
-                <li><a href=""><p>Galeria</p></a></li>
-                <li><a href=""><p>Sobre Nosotros</p></a></li>
-                <li><a href="html/contacto.html"><p>Contacto</p></a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="../index.html"><p>Inicio</p></a></li>
+                    <li><a href=""><p>Servicios</p></a></li>
+                    <li><a href="galeria.html"><p>Galeria</p></a></li>
+                    <li><a href=""><p>Sobre Nosotros</p></a></li>
+                    <li><a href="contacto.html"><p>Contacto</p></a></li>
+                </ul>
+
+            </nav>
+            <div class="popup-backdrop" id="popup-backdrop"></div>
+            <div class="popup" id="popup">
+                <p>Este enlace o sitio en la página está en desarrollo.</p>
+                <button onclick="closePopup()">Cerrar</button>
+            </div>
         </div>
         <div class="logo">
             <img src="../img/logo.png" alt="" class="logo">
@@ -34,7 +42,7 @@
     <div class="upSpace"></div>
 
     <main>
-        <h1>Galería de Imágenes</h1>
+        <h2>Galería de Imágenes</h1>
         <div class="galeria">
             <div class="imagen-contenedor grande">
                 <img src="../img/banner-telas.png" alt="Imagen 1">

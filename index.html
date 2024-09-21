@@ -17,13 +17,21 @@
         <div id="backgroundOpacity" class="backgroundOpacity"></div>
         <div id="listMenu" class="listMenu">
             <button id="buttonCloseMenu" class="buttonCloseMenu"><i class="fa-solid fa-xmark"></i></button>
-            <ul>
-                <li><a href=""><p>Inicio</p></a></li>
-                <li><a href=""><p>Servicios</p></a></li>
-                <li><a href="html/galeria.html"><p>Galeria</p></a></li>
-                <li><a href=""><p>Sobre Nosotros</p></a></li>
-                <li><a href="html/contacto.html"><p>Contacto</p></a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href=""><p>Inicio</p></a></li>
+                    <li><a href=""><p>Servicios</p></a></li>
+                    <li><a href="html/galeria.html"><p>Galeria</p></a></li>
+                    <li><a href=""><p>Sobre Nosotros</p></a></li>
+                    <li><a href="html/contacto.html"><p>Contacto</p></a></li>
+                </ul>
+
+            </nav>
+            <div class="popup-backdrop" id="popup-backdrop"></div>
+            <div class="popup" id="popup">
+                <p>Este enlace o sitio en la página está en desarrollo.</p>
+                <button onclick="closePopup()">Cerrar</button>
+            </div>
         </div>
         <div class="logo">
             <img src="img/logo.png" alt="" class="logo">
